@@ -1,0 +1,4 @@
+antlr4-visitor Hello.g4 Execute String
+antlr4-main -v Execute
+antlr4-build
+cat commands.txt | antlr4-run 

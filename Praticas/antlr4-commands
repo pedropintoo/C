@@ -1,0 +1,11 @@
+antlr4-build
+echo "1*2+3*4" | antlr4-run
+echo "1*(2+3)*4" | antlr4-test -gui
+echo "1*(2+3)*4" | antlr4-test -tree
+echo "1*(2+3)*4" | antlr4-test -tokens
+antlr4-clean
+
+antlr4-visitor Hello.g4 Execute String
+antlr4-main Hello greetings -v Execute
+antlr4-build
+cat commands.txt | antlr4-run

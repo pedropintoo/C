@@ -1,0 +1,30 @@
+module(name, header, row) ::= <<
+\<table\>
+    \<thead\>
+        <header>
+    \</thead\>    
+    \<tbody\>
+        <row>
+    \</tbody\>  
+\</table\>
+>>
+
+header(header_values) ::= <<
+    \<tr\>
+        <header_values>
+    \</tr\>
+>>
+
+header_values(value) ::= <<
+\<th\><value>\</th\>
+>>
+
+rows(row_values) ::= <<
+    \<tr\>
+        <row_values>
+    \</tr\>
+>>
+
+row_values(value) ::= <<
+\<td\><value>\</td\>
+>>
